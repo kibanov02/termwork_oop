@@ -7,6 +7,6 @@ public class Main {
         Point2D p2 = new Point2D(x);
         System.out.println(p2.getX(0));
     }
-}
+}//
 
 
