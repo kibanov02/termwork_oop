@@ -7,7 +7,7 @@ class  Point {
         for(int i = 0; i < dim; i++) {
             this.x[i] = 0;
         }
-    }//
+    }
 
     public Point(int dim, double[] x) {
         this.dim = dim;
