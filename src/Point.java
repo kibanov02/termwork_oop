@@ -2,10 +2,10 @@ class  Point {
     private int dim;
     private double[] x = new double[3];
 
-    public Point(int dim, int[] ints) {
+    public Point(int dim) {
         this.dim = dim;
         for(int i = 0; i < dim; i++) {
-            this.x[i] = 1;
+            this.x[i] = 0;
         }
     }
 
@@ -131,29 +131,25 @@ class  Point {
 //    }
 }
 
-/*
+
 class Point2D extends Point {
     public Point2D() {
-
+       super(2);
     }
 
     public Point2D(double[] x) {
-        super(dim, x);
-        new Point(2, x);
+        super(2,x);
     }
 }
+
 
 class Point3D extends Point {
-    public Point3D(int dim) {
-        super(dim);
-        double[]x = new double[]{0, 0, 0};
-        new Point(dim, x);
+    public Point3D() {
+        super(3);
     }
 
-    public Point3D(int dim, double[] x) {
-        super(dim, x);
-        new Point(dim, x);
+    public Point3D(double[] x) {
+        super(3, x);
     }
 }
 
- */
