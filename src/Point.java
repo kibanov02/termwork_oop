@@ -132,24 +132,3 @@ class  Point {
 }
 
 
-class Point2D extends Point {
-    public Point2D() {
-       super(2);
-    }
-
-    public Point2D(double[] x) {
-        super(2,x);
-    }
-}
-
-
-class Point3D extends Point {
-    public Point3D() {
-        super(3);
-    }
-
-    public Point3D(double[] x) {
-        super(3, x);
-    }
-}
-
