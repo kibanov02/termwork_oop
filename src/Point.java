@@ -1,8 +1,9 @@
 class  Point {
     private int dim;
-    private double[] x = new double[3];
+    private double[] x; //= new double[3];
 
     public Point(int dim) {
+        this.x = new double[dim];
         this.dim = dim;
         for(int i = 0; i < dim; i++) {
             this.x[i] = 0;
@@ -10,6 +11,7 @@ class  Point {
     }
 
     public Point(int dim, double[] x) {
+        this.x = new double[dim];
         this.dim = dim;
         if (dim >= 0) System.arraycopy(x, 0, this.x, 0, dim);
     }
